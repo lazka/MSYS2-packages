@@ -20,6 +20,7 @@ makedepends=('docbook-xsl'
              'meson'
              'ninja'
              'zlib-devel')
+depends=('python')
 source=(https://download.gnome.org/sources/glib/${pkgver%.*}/glib-$pkgver.tar.xz
         2.38.2-gconvert-cygwin.patch
         2.64-gmodule-cygwin-rebased.patch)
