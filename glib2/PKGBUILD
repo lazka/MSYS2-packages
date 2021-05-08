@@ -16,7 +16,7 @@ makedepends=('docbook-xsl'
              'libxslt-devel'
              'pcre-devel'
              'pkg-config'
-             'python3'
+             'python'
              'meson'
              'ninja'
              'zlib-devel')
