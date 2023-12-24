@@ -2,23 +2,15 @@
 
 pkgbase=autotools-wrappers
 pkgname=('automake-wrapper' 'autoconf-wrapper' )
-pkgver=20221207
-pkgrel=2
+pkgver=20231224
+pkgrel=1
 arch=('any')
 license=('spdx:GPL-2.0-only')
 makedepends=('git')
 url="https://gitweb.gentoo.org/proj/autotools-wrappers.git/"
-_commit="afe80def609c91d72df73837ce2c51fed8b69f28" # at-20221207
-source=("git+https://anongit.gentoo.org/git/proj/autotools-wrappers.git#commit=${_commit}"
-        "0001-bump-latest-autoconf-version.patch")
-sha256sums=('SKIP'
-            'facedfdd9a3520e58fb040d314dd64edc00c6e0e30dbcedb8dce20b347d6e73d')
-
-prepare() {
-  cd "${srcdir}/${pkgbase}"
-
-  patch -Np1 -i "${srcdir}/0001-bump-latest-autoconf-version.patch"
-}
+_commit="864388608956c07ddfc765f6c4f1ab72234631f7" # at-20231224
+source=("git+https://anongit.gentoo.org/git/proj/autotools-wrappers.git#commit=${_commit}")
+sha256sums=('SKIP')
 
 package_automake-wrapper() {
   pkgdesc="Wrapper scripts for automake commands"
